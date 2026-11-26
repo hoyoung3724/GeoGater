@@ -1,0 +1,20 @@
+# Router training / evaluation (train.py)
+torch>=2.1
+numpy>=1.24
+pandas>=2.0
+scikit-learn>=1.3
+tqdm
+
+# Data pipeline (pipeline/*)
+transformers>=4.49
+pillow
+geopy>=2.4
+pyproj>=3.6
+faiss-cpu>=1.8        # or faiss-gpu
+openai>=1.40          # zero_shot.py, g3_rag.py
+pycountry             # optional: country names for the OSV5M database
+
+# GeoRanker reward step (pipeline/georanker_rewards.py)
+peft>=0.15
+accelerate>=1.0
+qwen-vl-utils
